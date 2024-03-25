@@ -19,8 +19,8 @@ class Produtos(BaseModel):
 
     @validator('item')
     def validate_item(cls, value):
-        if not re.match('^([a-z]|-|_)+$', value):
-            raise ValueError('Invalid item')
+        if not re.match('^([a-z]|-| |_)+$', value):
+            raise ValueError('Inva lid item')
         return value
 
 

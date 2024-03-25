@@ -1,5 +1,6 @@
 from sqlalchemy import create_engine
 import sqlalchemy.orm
+from sqlalchemy.orm import declarative_base
 from db.config import settings
 from fastapi import Depends
 from sqlalchemy.orm import sessionmaker
